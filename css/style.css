@@ -31,7 +31,7 @@ a {
 }
 
 .header {
-  background-image: url("../../imgs/banner-bg.png");
+  background-image: url("../imgs/banner-bg.png");
   background-position: center;
   background-size: cover;
   height: 60vh;
@@ -340,7 +340,7 @@ a {
 }
 
 .header_2 {
-  background-image: url("../../imgs/header_2_bg.png");
+  background-image: url("../imgs/header_2_bg.png");
   background-position: center;
   background-size: cover;
 }
@@ -582,7 +582,7 @@ a {
 
 .about-us {
   padding: 100px 0;
-  background-image: url("../../imgs/about-bg.png");
+  background-image: url("../imgs/about-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -661,7 +661,7 @@ a {
   opacity: 1;
 }
 .developer .img {
-  background-image: url("../../imgs/developer-bg.png");
+  background-image: url("../imgs/developer-bg.png");
   background-size: cover;
   background-position: center;
 }
@@ -672,7 +672,7 @@ a {
 
 .business {
   padding: 100px 0;
-  background-image: url("../../imgs/about-bg.png");
+  background-image: url("../imgs/about-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -720,7 +720,7 @@ a {
 
 .testimonial {
   padding: 100px 0;
-  background-image: url("../../imgs/testimonial-bg.png");
+  background-image: url("../imgs/testimonial-bg.png");
   background-size: cover;
   background-position: center;
 }
@@ -1787,7 +1787,7 @@ a {
 
 .team {
   padding: 100px 0;
-  background-image: url("../../imgs/team-bg.png");
+  background-image: url("../imgs/team-bg.png");
   background-position: center;
   background-size: cover;
 }
@@ -2401,7 +2401,7 @@ a {
 }
 
 .footer {
-  background-image: url("../../imgs/footer-bg.png");
+  background-image: url("../imgs/footer-bg.png");
   background-size: cover;
   background-position: top;
   padding: 100px 0 20px;
