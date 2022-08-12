@@ -34,7 +34,8 @@ a {
   background-image: url("../imgs/banner-bg.png");
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  min-height: 70vh;
+  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   .header {
