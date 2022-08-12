@@ -1,0 +1,57 @@
+.faq{
+    padding: 100px 0;
+    @include headTitle;
+    .accordion{
+        .accordion-item{
+            margin-top: 20px !important;
+            border: none;
+            h2{
+                button{
+                    background-color: rgba(242, 240, 240, 0.832);
+                    box-shadow: none;
+                    outline: none;
+                    color: $mainColor !important;
+                    font-weight: 600;
+                    padding: 25px 20px;
+                }
+            }
+            .accordion-collapse{
+                .accordion-body{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.touch{
+    padding: 100px 0;
+    .head{
+        @include headTitle;
+        p{
+            width: 70%;
+            margin: auto;
+            @media (max-width:991px) {
+                width: 90%;
+            }
+        }
+    }
+    .content{
+        padding: 80px 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        img{
+            width: 60px;
+        }
+        h4{
+            font-size: 20px;
+            margin: 30px 0 10px;
+            font-weight: 500;
+            a{
+                color: $mainColor;
+            }
+        }
+        p{
+            margin: 0;
+        }
+    }
+}

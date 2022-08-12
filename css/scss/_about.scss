@@ -1,0 +1,20 @@
+.about-us{
+    padding: 100px 0;
+    background-image: url("../../imgs/about-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    .img{
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        @include headTitle;
+        .row{
+            p{
+                margin: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+}

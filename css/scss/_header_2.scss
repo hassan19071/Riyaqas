@@ -1,0 +1,184 @@
+.header_2{
+    background-image: url("../../imgs/header_2_bg.png");
+    background-position: center;
+    background-size: cover;
+    .sec{
+        transform: translateY(-100%);
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        left: 0;
+        transition: .4s;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        z-index: 100;
+    }
+    .navbar-content{
+        padding: 20px 0;
+        .logo{
+            img{
+            width: calc(5vw + 5rem) !important;
+            }
+        }
+        .search{
+            form{
+                border: 2px solid #ddd;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-radius: 40px;
+                overflow: hidden;
+                input{
+                     width: 100%;
+                     border: none;
+                     outline: none;
+                     padding: 8px 20px;
+                     &::placeholder{
+                        color: #666;
+                        font-size: 15px;
+                     }
+                }
+                button{
+                    background-color: transparent;
+                    padding: 8px 20px;
+                    border: none;
+                    outline: none;
+                    i{
+                        font-size: 17px !important; 
+                    }
+                    color: #555;
+                }
+            }
+        }
+        i{
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .cart{
+            i{
+                font-size: 20px;
+                cursor: pointer;
+                color: $mainColor;
+                transition: .3s;
+            }
+            &:hover{
+              .cart-dropdown{
+                transform: translateY(0%);
+                opacity: 1;
+                visibility: visible;
+                transition: .5s;
+              }
+              >i{
+                color: $secColor;
+              }
+            }
+            .cart-dropdown{
+               width: 340px;
+               padding:30px 20px;
+               right: 0;
+               top: 120%;
+               box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+               transform: translateY(30%);
+               opacity: 0;
+               visibility: hidden;
+               z-index: 1000;
+               transition: .5s;
+               background-color: #fff;
+               .pros{
+                .product{
+                    transition: .2s;
+                    &.close{
+                        padding: 0;
+                        margin: 0;
+                        height: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    .img{
+                        img{
+                            width: 80px;
+                        }
+                    }
+                    .info{
+                        h4{
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                        p{
+                            margin: 3px 0;
+                            font-size: 16px;
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                    .close{
+                        width: 20px;
+                        text-align: end;
+                        margin-left: auto;
+                        font-size: 16px !important;
+                        i{
+                            color: #888;
+                        }
+                    }
+                }
+               }
+               .total{
+                margin: 10px 0;
+                p{
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+               }
+               .checkout{
+                padding: 0 !important;
+                a{
+                    background-color: $secColor;
+                    color: #fff;
+                }
+               }
+            }
+        }
+        .heart{
+            i{
+                color: $mainColor;
+                transition: .3s;
+            }
+            .badge{
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            cursor: pointer;
+            &:hover{
+                i{
+                    color: $secColor;
+                }
+            }
+        }
+        .menu{
+            i{
+                font-size: 30px;
+                color: $mainColor;
+            }
+        }
+    }
+    .hero{
+        .hero-text{
+            padding: 100px 0;
+            h2{
+                font-size: calc(1vw + 1.5rem);
+                color: $mainColor;
+            }
+            nav{
+                li{
+                    a{
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}

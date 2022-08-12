@@ -1,0 +1,240 @@
+.shop-details {
+  padding: 100px 0;
+  .imgs {
+    .imgs-grid {
+      flex: 1;
+      img {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    .main-img {
+      flex: 3;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .info {
+    .rate {
+      i {
+        color: $secColor;
+      }
+      span {
+        color: #999;
+      }
+    }
+    h3 {
+      font-size: 25px;
+    }
+    .quantity {
+      flex-wrap: wrap;
+      .minus,
+      .plus {
+        width: 60px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #eee;
+        cursor: pointer;
+      }
+      .qty {
+        width: 100px;
+        text-align: center;
+      }
+      button {
+        margin: 0 2px;
+        height: 50px;
+      }
+    }
+    .data {
+      margin: 50px 0 0;
+      h6 {
+        margin: 0 10px 0 0;
+      }
+      span {
+        font-size: 15px;
+        color: #999;
+      }
+    }
+  }
+
+  .btns {
+    margin: 80px 0 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    span {
+      background-color: rgb(221, 218, 218);
+      padding: 15px 30px;
+      cursor: pointer;
+      color: #444;
+      transition: 0.3s;
+      &.active,
+      &:hover {
+        background-color: $secColor;
+        color: #fff;
+      }
+    }
+  }
+  .results {
+    > div {
+      display: none;
+      &.active {
+        display: block;
+      }
+      .comments {
+        .comment {
+          margin-top: 30px;
+          .info {
+            align-items: center;
+            img {
+              width: 80px;
+            }
+            h4 {
+              font-size: 18px;
+              font-weight: 600;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .form {
+        margin-top: 70px;
+        h3 {
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+        form {
+          textarea {
+            width: 100%;
+            display: block;
+            min-height: 125px;
+            padding: 8px 20px;
+          }
+          input {
+            display: block;
+            padding: 8px 20px;
+            width: 100%;
+            border: 1.5px solid #999;
+          }
+        }
+        button {
+          background-color: #32e2a9;
+          padding: 8px 30px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.results {
+  > div {
+    display: none;
+    &.active {
+      display: block;
+    }
+    .comments {
+      .comment {
+        margin-top: 30px;
+        .info {
+          align-items: center;
+          img {
+            width: 80px;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: 600;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .form {
+      margin-top: 70px;
+      h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      form {
+        textarea {
+          width: 100%;
+          display: block;
+          min-height: 125px;
+          padding: 8px 20px;
+        }
+        input {
+          display: block;
+          padding: 8px 20px;
+          width: 100%;
+          border: 1.5px solid #999;
+        }
+      }
+      button {
+        background-color: #32e2a9;
+        padding: 8px 30px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.opinion {
+  .comments {
+    .comment {
+      margin-top: 30px;
+      .info {
+        align-items: center;
+        img {
+          width: 80px;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          margin: 0;
+          color: #888;
+          font-size: 14px;
+        }
+      }
+      .reply{
+        a{
+            color: $mainColor;
+        }
+      }
+    }
+  }
+  .form {
+    margin-top: 70px;
+    h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    form {
+      textarea {
+        width: 100%;
+        display: block;
+        min-height: 125px;
+        padding: 8px 20px;
+      }
+      input {
+        display: block;
+        padding: 8px 20px;
+        width: 100%;
+        border: 1.5px solid #999;
+      }
+    }
+    button {
+      background-color: #32e2a9;
+      padding: 8px 30px;
+      color: #fff;
+    }
+  }
+}

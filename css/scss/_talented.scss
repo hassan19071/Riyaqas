@@ -1,0 +1,16 @@
+.talented-people{
+    padding: 100px 0;
+    .text{
+        @include headTitle;
+        .row{
+            div{
+                text-align: center;
+            }
+        }
+    }
+    .img{
+        img{
+            width: 100%;
+        }
+    }
+}

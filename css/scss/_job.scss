@@ -1,0 +1,94 @@
+.job-listing{
+    padding: 100px 0;
+    @include headTitle;
+    .job{
+        margin: 20px 0;
+        h5{
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(108, 122, 134);
+        }
+        span{
+            color: rgb(147, 147, 147);
+        }
+    }
+    .button{
+        margin: 20x 0
+    }
+}
+
+.job-details{
+    padding: 100px 0;
+    .job{
+        h4{
+            font-size: 30px;
+            font-weight: 400;
+            width: fit-content;
+            border-bottom: 1px solid $mainColor;
+        }
+        .name{
+            margin: 50px 0;
+            h5{
+                font-weight: 500;
+                font-size: 25px;
+            }
+        }
+        h6{
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .vancy{
+            margin: 50px 0;
+        }
+        .div{
+            margin: 50px 0;
+        }
+    }
+    .details{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 50px 30px;
+        h4{
+            font-weight: 400;
+            font-size: 25px;
+            border-bottom: 1px solid $mainColor;
+        }
+        .info{
+            margin: 30px 0;
+            img{
+                width: 20px;
+            }
+            .text{
+                margin-left: 20px;
+            }
+            h5{
+                font-size: 17px;
+                color: #777;
+                font-weight: 400;
+                margin: 0;
+            }
+            span{
+                color: #988989;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.job-apply{
+    padding: 100px 0;
+    .head{
+        @include headTitle;
+    }
+}
+
+.form{
+    form{
+        input,textarea{
+            box-shadow: none !important;
+            outline: none;
+            &:focus{
+                border: 1px solid $mainColor;
+            }
+        }
+    }
+}

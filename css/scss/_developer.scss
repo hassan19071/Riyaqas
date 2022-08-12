@@ -1,0 +1,45 @@
+.developer{
+    padding: 100px 0;
+    .text{
+        @include headTitle;
+        .types{
+            margin-top: 30px;
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                width: 300px;
+                margin-bottom: 20px;
+                span{
+                    cursor: pointer;
+                    font-size: 17px;
+                    font-weight: 500;
+                    border-bottom: 2px solid transparent;
+                    transition: .4s;
+                    &.active,&:hover{
+                        color: $secColor;
+                        border-bottom-color: $secColor;
+                    }
+                }
+            }
+        }
+        .infos{
+            .info{
+                display: none;
+                opacity: 0;
+                transition: opacity .4s;
+                &.active{
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .img{
+        background-image: url("../../imgs/developer-bg.png");
+        background-size: cover;
+        background-position: center;
+        img{
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        }
+    }
+}

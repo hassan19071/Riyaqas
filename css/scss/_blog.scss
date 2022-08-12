@@ -1,0 +1,144 @@
+.blog{
+    padding: 100px 0;
+    .blogs{
+        .blog-data{
+            .img{
+                a{
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 50px;
+                    color: $secColor;
+                }
+            }
+            .author{
+                .admin{
+                    padding: 10px 30px;
+                    background-color: $mainColor;
+                    color: #fff;
+                    border-radius: 10px;
+                }
+                span{
+                    color: #999;
+                }
+            }
+            .title{
+                h3{
+                    font-size: 25px;
+                    a{
+                        color: $mainColor;
+                    }
+                }
+            }
+            .more{
+                transition: .3s;
+                width: fit-content;
+                i{
+                    transition: .3s;
+                }
+                &:hover{
+                    color: $secColor;
+                    i{
+                        transform: translateX(6px);
+                    }
+                }
+            }
+        }
+        
+    }
+    nav{
+        .pagination{
+            li.active{
+                a{
+                    background-color: $mainColor !important;
+                    color: #fff !important;
+                }
+            }
+           a{
+            color: $mainColor !important;
+           }
+        }
+       }
+
+       .sidebar{
+        border: 2px solid #eee;
+        padding: 50px 20px;
+        h3{
+            font-size: 22px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .posts{
+            margin-top: 50px;
+            .post{
+                h5{
+                    font-size: 17px;
+                    a{
+                        color: $mainColor;
+                    }
+                }
+                span{
+                    color: #999;
+                    font-size: 15px;
+                }
+            }
+        }
+        .categories{
+            margin-top: 50px;
+            ul{
+                li{
+                    margin-top: 10px;
+                    a{
+                        color: #444;
+                        transition: .3s;
+                        &:hover{
+                            color: $mainColor;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        .tags{
+            margin-top: 50px;
+            .tag{
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+               span{ 
+                margin:15px 15px 0px 0;
+                a{
+                    padding:6px 20px;
+                    background-color: $secColor;
+                    color: #fff;
+                }
+               }
+            }
+        }
+        .archives{
+            ul{
+                li{
+                    margin-top: 10px;
+                    i{
+                        color: #777;
+                    }
+                    a{
+                        color: #777;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .gallery{
+            .imgs{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                a{
+                    flex: 2;
+                    margin: 1px 0;
+                }
+            }
+        }
+    }
+}

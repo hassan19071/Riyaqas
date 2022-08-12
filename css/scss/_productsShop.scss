@@ -1,0 +1,10 @@
+.products-shop{
+   padding: 100px 0;
+   @include productsDesign;
+}
+
+.related-products{
+   padding: 100px 0;
+   @include headTitle;
+   @include productsDesign;
+}

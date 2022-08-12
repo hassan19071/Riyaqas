@@ -1,0 +1,21 @@
+.processing{
+    padding: 100px 0;
+    .text{
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            -webkit-text-stroke: 2px rgb(110, 110, 110);
+            -webkit-text-fill-color: transparent;
+            -ms-text-stroke: 2px rgb(110, 110, 110);
+            -ms-text-fill-color: transparent;
+            -moz-text-stroke: 2px rgb(110, 110, 110);
+            -moz-text-fill-color: transparent;
+            -o-text-stroke: 2px rgb(110, 110, 110);
+            -o-text-fill-color: transparent;
+        }
+        @include headTitle;
+        h2{
+            font-size: 30px
+        }
+    }
+}

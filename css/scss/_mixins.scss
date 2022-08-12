@@ -1,0 +1,166 @@
+@mixin  headTitle {
+    h2{
+        font-size: calc(1vw + 1.5rem);
+        color: $mainColor;
+        font-weight: 700;
+        span{
+            color: $secColor;
+        }
+    }
+}
+
+@mixin productsDesign {
+   .data{
+    flex-wrap: wrap;
+     .sort{
+        .custom-select {
+            position: relative;
+            select {
+                display: none;
+              }
+            .select-selected {
+                background-color: #eee;
+                font-size: 14px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 50%;
+                    right: 10px;
+                    width: 0;
+                    height: 0;
+                    border: 6px solid transparent;
+                    border-color: #999 transparent transparent transparent;
+                    transform: translateY(0%);
+                  }
+                &.select-arrow-active:after {
+                    border-color: transparent transparent #999 transparent;
+                    top: 50%;
+                    transform: translateY(-100%);
+                  }
+            }
+            .select-items {
+                position: absolute;
+                background-color: #eee;
+                top: 100%;
+                left: 0;
+                right: 0;
+                z-index: 99;
+                font-size: 14px;
+              }
+            .select-items div,.select-selected {
+                color: #888;
+                padding: 8px 16px;
+                border: 1px solid transparent;
+                border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+                cursor: pointer;
+            }
+            .select-hide {
+                display: none;
+              }
+              
+              .select-items div:hover, .same-as-selected {
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+          }
+     }
+   }
+   .product{
+    &:hover{
+        .img{
+            img{
+                transform: scale(1.2);
+            }
+            &::after,&::before{
+                transform: translate(0,0);
+            }
+            .add-cart{
+                opacity: 1;
+            }
+        }
+    }
+    .img{
+        overflow: hidden;
+        img{
+            width: 100%;
+            transition: .5s;
+        }
+        .add-cart{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 3;
+            opacity: 0;
+            transition: .5s;
+            a{
+                background-color: $secColor;
+                padding:8px 0px;
+                text-align: center;
+                width: 150px;
+                display: inline-block;
+                border: none;
+                color: #fff;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba($color: $mainColor, $alpha: .2);
+            transform: translate(-100%,-100%);
+            transition: .5s;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba($color: $mainColor, $alpha: .2);
+            transform: translate(100%,100%);
+            transition: .5s;
+        }
+    }
+    .rate{
+        margin-top: 20px;
+        i{
+            color: $secColor;
+        }
+    }
+    .name{
+        padding: 5px 0;
+        h4{
+            font-size: 20px;
+           a{
+            color: $mainColor;
+           }
+        }
+    }
+    .price{
+        margin-bottom: 20px;
+        span{
+            &:first-of-type{
+                color: #999;
+            }
+        }
+    }
+   }
+   nav{
+    .pagination{
+        li.active{
+            a{
+                background-color: $mainColor !important;
+                color: #fff !important;
+            }
+        }
+       a{
+        color: $mainColor !important;
+       }
+    }
+   }
+}

@@ -1,0 +1,18 @@
+.business{
+    padding: 100px 0;
+    background-image: url("../../imgs/about-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    .text{
+        @include headTitle;
+        .tools{
+            div{
+                p{
+                    margin: 0;
+                    margin-left: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

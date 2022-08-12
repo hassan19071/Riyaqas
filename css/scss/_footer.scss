@@ -1,0 +1,36 @@
+.footer{
+    background-image: url("../../imgs/footer-bg.png");
+    background-size: cover;
+    background-position: top;
+    padding: 100px 0 20px;
+    .logo{
+        img{
+            width: calc(5vw + 5rem);
+        }
+    }
+    .foot{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        p{
+            color: #999;
+            margin: 0;
+        }
+        .social-links{
+            a{
+                width: 40px;
+                height: 40px;
+                background-color: $secColor;
+                text-align: center;
+                display: inline-block;
+                border-radius: 50%;
+                line-height: 40px;
+                color: #fff;
+                transition: .3s;
+                &:hover{
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}

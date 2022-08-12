@@ -1,0 +1,34 @@
+.checkout{
+    padding: 100px 0;
+    h4{
+        padding: 20px 0;
+        border-bottom: 2px solid #eee;
+        font-size: 20px;
+    }
+    form{
+        button{
+            background-color: $secColor;
+            border: 2px solid $secColor;
+            transition: .3s;
+            &:hover{
+                background-color: $mainColor;
+            }
+        }
+    }
+    .product-info{
+        flex-direction: column;
+        .pro{
+            img{
+                width: 100%;
+            }
+            h4{
+                border: none;
+                padding: 0;
+                margin: 20px 0 0;
+            }
+        }
+        .total{
+            text-align: end;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.what-we-do{
+    padding: 100px 0;
+    .head{
+        @include headTitle;
+        p{
+            width: 70%;
+            margin: auto;
+            @media (max-width:991px) {
+                width: 90%;
+            }
+        }
+    }
+    .activity{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 40px 20px;
+        img{
+            width: 60px;
+        }
+        h4{
+            font-size: 22px;
+            font-weight: 500;
+            margin: 15px 0 20px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
